@@ -66,8 +66,8 @@ Uygulama, çeviri için aşağıdaki adımları izler:
 
 1. Projeyi bilgisayarınıza klonlayın:
 ```
-git clone https://github.com/kullaniciadi/ceviri-uygulamasi.git
-cd ceviri-uygulamasi
+git clone https://github.com/Batuhan-Yalcin/translate-app.git
+cd translate-app
 ```
 
 2. Bağımlılıkları yükleyin:
@@ -109,4 +109,4 @@ Bu proje açık kaynaklıdır ve MIT lisansı altında dağıtılmaktadır.
 
 Batuhan Yalçın - [batuhan@example.com](mailto:batuhan@example.com)
 
-Proje Linki: [https://github.com/kullaniciadi/ceviri-uygulamasi](https://github.com/kullaniciadi/ceviri-uygulamasi)
+Proje Linki: [https://github.com/Batuhan-Yalcin/translate-app](https://github.com/Batuhan-Yalcin/translate-app)
