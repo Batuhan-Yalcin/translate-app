@@ -107,6 +107,6 @@ Bu proje açık kaynaklıdır ve MIT lisansı altında dağıtılmaktadır.
 
 ## İletişim
 
-Batuhan Yalçın - [batuhan@example.com](mailto:batuhan@example.com)
+Batuhan Yalçın - batuhanyalcin5834@gmail.com
 
 Proje Linki: [https://github.com/Batuhan-Yalcin/translate-app](https://github.com/Batuhan-Yalcin/translate-app)
