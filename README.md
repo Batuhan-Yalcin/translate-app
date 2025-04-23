@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Çeviri Uygulaması
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, kullanıcılara metin çevirisi yapma imkanı sağlayan modern bir web uygulamasıdır. Uygulama, modern bir arayüz, gelişmiş dil tespiti ve çeviri özellikleri sunar.
 
-## Available Scripts
+## Proje Hakkında
 
-In the project directory, you can run:
+Çeviri Uygulaması, React ile geliştirilmiş bir web uygulamasıdır. Arka planda çeviri hizmetlerini kullanarak metinleri çeşitli diller arasında çevirebilir. Ayrıca otomatik dil algılama ve sesli okuma gibi ek özellikler de içerir.
 
-### `npm start`
+### Özellikler
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Modern Arayüz**: Estetik ve kullanıcı dostu tasarım
+- **Dil Algılama**: Otomatik dil tespiti
+- **Metin Çevirisi**: 10+ dil desteği
+- **Sesli Okuma**: Çevrilen metni dinleme imkanı
+- **Dil Değiştirme**: Kaynak ve hedef dili tek tıkla değiştirme
+- **Responsive Tasarım**: Tüm cihazlara uyumlu arayüz
+- **Yükleme Göstergeleri**: İşlem sürerken bilgilendirme
+- **Metni Kopyalama**: Çevrilen metni panoya kopyalama
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Kullanılan Teknolojiler
 
-### `npm test`
+- **React**: Kullanıcı arayüzü için
+- **Bootstrap**: Responsive tasarım için
+- **React-Bootstrap**: UI komponentleri için
+- **Axios**: API istekleri için
+- **Web Speech API**: Sesli okuma işlemleri için
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Nasıl Çalışır?
 
-### `npm run build`
+Uygulama, kullanıcının kaynak metni girdiği ve hedef dili seçtiği basit bir arayüz sunar. "Çevir" düğmesine tıkladığınızda, metin API aracılığıyla çevrilir ve sonuç ekranda gösterilir.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Dil Tespiti
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Uygulama, kaynak dil "Otomatik Tespit" olarak seçildiğinde gelişmiş bir algoritma kullanarak metni analiz eder:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Türkçe'ye özgü karakterleri kontrol eder (ş, ç, ğ, ü, ö, ı)
+2. İngilizce'ye özgü karakterleri kontrol eder (w, x, q)
+3. Yaygın Türkçe kelimeleri (ve, bir, bu, için) arar
+4. Toplanan verilere göre dilin Türkçe mi yoksa İngilizce mi olduğuna karar verir
 
-### `npm run eject`
+### Çeviri Motoru
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Uygulama, çeviri için aşağıdaki adımları izler:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Kullanıcı tarafından girilen metni alır
+2. Gerekirse dil tespiti yapar
+3. Çeviri API'sine istek gönderir
+4. Yanıtı işler ve kullanıcıya gösterir
+5. API bağlantısı başarısız olursa basit bir sözlük kullanarak çalışmaya devam eder
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Gelişmiş Özellikler
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Sesli Okuma**: Web Speech API kullanarak çevrilen metni seslendirir
+- **Kopyalama**: Tek tıkla çevrilen metni panoya kopyalar
+- **Dil Değiştirme**: Kaynak ve hedef dilleri yer değiştirir, çevrilmiş metinle birlikte
+- **Animasyonlar**: Kullanıcı deneyimini artırmak için modern animasyonlar ve görsel efektler
 
-## Learn More
+## Kurulum ve Çalıştırma
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Gereksinimler
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Node.js (v12 veya üzeri)
+- npm veya yarn
 
-### Code Splitting
+### Kurulum
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Projeyi bilgisayarınıza klonlayın:
+```
+git clone https://github.com/kullaniciadi/ceviri-uygulamasi.git
+cd ceviri-uygulamasi
+```
 
-### Analyzing the Bundle Size
+2. Bağımlılıkları yükleyin:
+```
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Uygulamayı başlatın:
+```
+npm start
+```
 
-### Making a Progressive Web App
+4. Tarayıcınızda şu adresi açın:
+```
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## API Limitleri ve Dikkat Edilmesi Gerekenler
 
-### Advanced Configuration
+- API'ler, genellikle istek sınırlamaları koyar ve bu sınırlar aşıldığında geçici olarak erişim engellenebilir.
+- Büyük metin çevirileri için, metni daha küçük parçalara bölüp birden fazla istek göndermek daha sağlıklı olabilir.
+- API bağlantısı olmadığında uygulama, sınırlı bir kelime veritabanı ile basit çeviriler yapabilir.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Katkıda Bulunma
 
-### Deployment
+Projeye katkıda bulunmak istiyorsanız:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Bu depoyu fork edin
+2. Yeni bir branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Harika bir özellik ekle'`)
+4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
+5. Pull Request açın
 
-### `npm run build` fails to minify
+## Lisans
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Bu proje açık kaynaklıdır ve MIT lisansı altında dağıtılmaktadır.
+
+## İletişim
+
+Batuhan Yalçın - [batuhan@example.com](mailto:batuhan@example.com)
+
+Proje Linki: [https://github.com/kullaniciadi/ceviri-uygulamasi](https://github.com/kullaniciadi/ceviri-uygulamasi)
